@@ -1,0 +1,34 @@
+@use './vars';;
+
+.Menu{
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    background-color: var(--white);
+    padding: 20px;
+    //Con esto lo desanclamos
+    position: absolute;
+    //esto es lo que mide el header
+    top: 60px;
+    right: 60px;
+}
+
+.Menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu ul li{
+    text-align: end;
+    margin-bottom: 28px;
+}
+
+.Menu ul li:last-child {
+    padding-top: 20px;
+    margin-bottom: 0;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+

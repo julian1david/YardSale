@@ -1,0 +1,10 @@
+//Configuración para que reconozca los presets 
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+}

@@ -1,0 +1,31 @@
+@use './vars';
+
+.Button {
+    background-color: var(--hospital-green);
+	border-radius: 8px;
+	border: none;
+	color: var(--white);
+	width: 100%;
+	cursor: pointer;
+	font-size: var(--md);
+	font-weight: bold;
+	height: 50px;
+	margin-top: 16px;
+    margin-bottom: 30px;
+}
+.Button-secondary{
+    height: 44px;
+    background-color: var(--white);
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+}
+.Button--notFound{
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+.Button__addCar--icon{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-bottom: 0;
+}

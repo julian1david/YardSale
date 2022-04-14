@@ -1,0 +1,13 @@
+.Logo__nav{
+    display: block;
+    width: 100px;
+}
+.Logo__nav--mobile{
+    display: none;
+}
+@media (max-width: 800px) {
+	.Logo__nav--mobile {
+		display: block;
+        cursor: pointer;
+	}
+}

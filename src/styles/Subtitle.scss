@@ -1,0 +1,14 @@
+@use './vars';;
+
+.Subtitle{
+	color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.Subtitle--notFound{
+    font-size: var(--sm);
+    margin-bottom: 0px;
+}

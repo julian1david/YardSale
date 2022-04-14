@@ -1,0 +1,17 @@
+.Container{
+    display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+}
+.Container--email{
+    justify-items: center;
+}
+.Container--notfound{
+    margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+    .Container__mobile{
+        height: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+@use './vars';;
+
+.Order {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	gap: 16px;
+	align-items: center;
+	margin-bottom: 12px;
+}
+.Order p:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+}
+.Order p:nth-child(2) {
+	text-align: end;
+	font-weight: bold;
+}
+.Order img{
+	cursor: pointer;
+}
+.Checkout--Order{
+	margin-bottom: 24px;
+	background-color: var(--text-input-field);
+	border-radius: 8px;
+	padding: 0 8px;
+}
+
+.OrderItem p:nth-child(2) {
+	color: var(--very-light-pink);
+}
+.OrderItem p:nth-child(3) {
+	font-size: var(--md);
+	font-weight: bold;
+}

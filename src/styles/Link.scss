@@ -1,0 +1,18 @@
+@use './vars';;
+
+.Link{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 48px;
+}
+.Link__menu{
+    font-size: var(--md);
+    margin-bottom: 0;
+    color: var(--black);
+}
+.Link__menu--email{
+    color: var(--very-light-pink);
+}

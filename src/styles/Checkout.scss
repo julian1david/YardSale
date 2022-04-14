@@ -1,0 +1,12 @@
+@use './vars';;
+
+.Checkout {
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+.Checkout__container {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+}
