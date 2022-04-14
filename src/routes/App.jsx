@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from '../containers/Layout';
+import Layout from '@containers/Layout/Layout';
 import Login from '../pages/Login';
 import PasswordRecovery from '../pages/PasswordRecovery';
 import Home from '../pages/Home'
-import NotFound from '../pages/NotFound';
+import NotFound from '../pages/notFound/NotFound';
 import CreateAccount from '../pages/CreateAccount';
 import NewPassword from '../pages/NewPassword';
 import SendEmail from '../pages/SendEmail';
@@ -25,7 +25,7 @@ const App = () => {
     const initialState = useInitialState()
     return (
         <AppContext.Provider value={initialState}>
-            <BrowserRouter basename="/YardSale">
+            <BrowserRouter basename="YardSale/">
                 <Layout>
                     <Routes>
                         <Route path="/" index element={<Home />} />

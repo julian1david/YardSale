@@ -1,0 +1,10 @@
+import React from 'react'
+import './Title.scss'
+
+const Title = ({children , className}) => {
+  return (
+    <h1 className={['Title', className].join(" ")}>{children}</h1>
+  )
+}
+
+export default Title

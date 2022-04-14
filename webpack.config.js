@@ -8,8 +8,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         /* filename: 'bulde.js',
         publicPath: '/' */
-        filename: "YardSale/bundle.js",
-        publicPath: "/YardSale",
+        filename: "bundle.js",
+        publicPath: "/",
     },
     resolve: {
         extensions: ['.js', '.jsx'],
@@ -20,7 +20,8 @@ module.exports = {
             '@styles': path.resolve(__dirname, 'src/styles'),
             '@icons': path.resolve(__dirname, 'src/assets/icons/'),
             '@logos': path.resolve(__dirname, 'src/assets/logos/'),
-            '@hooks': path.resolve(__dirname,'src/hooks/' )
+            '@hooks': path.resolve(__dirname,'src/hooks/' ),
+            '@context': path.resolve(__dirname,'/src/context/' ),
         }
     },
     mode: 'development',

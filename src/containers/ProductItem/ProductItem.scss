@@ -1,0 +1,28 @@
+@use '@styles/vars';;
+
+.ProductItem {
+	width: 240px;
+}
+.ProductItem--info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+}
+.ProductItem--info  div p:nth-child(1) {
+	font-weight: bold;
+	font-size: var(--md);
+	margin-top: 0;
+	margin-bottom: 4px;
+}
+.ProductItem--info  div p:nth-child(2) {
+	font-size: var(--sm);
+	margin-top: 0;
+	margin-bottom: 0;
+	color: var(--very-light-pink);
+}
+@media (max-width: 640px) {
+	.ProductItem {
+		width: 140px;
+	}
+}

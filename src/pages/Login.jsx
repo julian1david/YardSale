@@ -1,11 +1,11 @@
 import React, {useRef} from 'react'
-import Input from '../components/Input'
-import Label from '../components/Label'
-import Link from '../components/Link'
-import Section from '../components/Section'
-import Container from '../components/Container'
-import '../styles/Button.scss'
-import '../styles/Form.scss'
+import Input from '@components/Input/Input'
+import Label from '@components/Label/Label'
+import Link from '@components/Link/Link'
+import Section from '@components/Section/Section'
+import Container from '@components/DivContainer/DivContainer'
+import '@styles/Button.scss'
+import '@styles/Form.scss'
 
 //En React se usa JS y este para las clases usa className y para los for usa htmlFor
 function Login() {

@@ -1,10 +1,10 @@
 import React from 'react';
-import Order from '../containers/Order'
-import OrderItem from '@containers/OrderItem'
-import Section from '../components/Section';
-import Title from '../components/Title';
-import '../styles/Checkout.scss';
-import '../styles/Form.scss'
+import Order from '@containers/Order/Order'
+import OrderItem from '@containers/OrderItem/OrderItem'
+import Section from '@components/Section/Section';
+import Title from '@components/Title/Title';
+import '@styles/Checkout.scss';
+import '@styles/Form.scss'
 
 const Checkout = () => {
     return (

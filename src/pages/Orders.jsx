@@ -1,9 +1,9 @@
 import React from 'react';
-import OrderItem from '../containers/OrderItem';
-import Title from '../components/Title'
-import Container from '../components/Container'
-import Section from '../components/Section'
-import '../styles/Form.scss'
+import OrderItem from '@containers/OrderItem/OrderItem';
+import Title from '@components/Title/Title'
+import Container from '@components/DivContainer/DivContainer'
+import Section from '@components/Section/Section'
+import '@styles/Form.scss'
 
 
 const Orders = () => {

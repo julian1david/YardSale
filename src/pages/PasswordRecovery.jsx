@@ -1,13 +1,13 @@
 import React from 'react'
-import Container from '../components/Container'
-import Section from '../components/Section'
-import Title from '../components/Title'
-import Subtitle from '../components/Subtitle'
-import Link from '../components/Link'
-import Label from '../components/Label'
-import Input from '../components/Input'
-import '../styles/Button.scss'
-import '../styles/Form.scss'
+import Container from '@components/DivContainer/DivContainer'
+import Section from '@components/Section/Section'
+import Title from '@components/Title/Title'
+import Subtitle from '@components/Subtitle/Subtitle'
+import Link from '@components/Link/Link'
+import Label from '@components/Label/Label'
+import Input from '@components/Input/Input'
+import '@styles/Button.scss'
+import '@styles/Form.scss'
 
 const RecoveryPassword = () => {
   return (
