@@ -9,7 +9,7 @@ module.exports = {
         /* filename: 'bulde.js',
         publicPath: '/' */
         filename: "bundle.js",
-        publicPath: "/YardSale/",
+        publicPath: "/",
     },
     resolve: {
         extensions: ['.js', '.jsx'],
