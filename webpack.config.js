@@ -8,8 +8,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         /* filename: 'bulde.js',
         publicPath: '/' */
-        filename: "YardSale/bundle.js",
-        publicPath: "/YardSale/",
+        filename: "bundle.js",
+        publicPath: "./",
     },
     resolve: {
         extensions: ['.js', '.jsx'],
