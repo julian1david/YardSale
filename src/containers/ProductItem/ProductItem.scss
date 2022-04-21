@@ -21,6 +21,13 @@
 	margin-bottom: 0;
 	color: var(--very-light-pink);
 }
+
+.disabled {
+	cursor: not-allowed;
+}
+.pointer{
+	cursor: pointer;
+}
 @media (max-width: 640px) {
 	.ProductItem {
 		width: 140px;

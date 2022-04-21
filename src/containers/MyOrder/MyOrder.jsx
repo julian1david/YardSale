@@ -27,7 +27,7 @@ const MyOrder = () => {
 				<Title>My Order</Title>
 			</div>
 			<div className="my-order-content">
-				{/* Como en este caso  el key ya lo habiamos usado ahora lo apsamos nombrandolo */}
+				{/* Como en este caso  el key ya lo habiamos usado ahora lo pasamos dando un nombre del index */}
 				{state.cart.map((product, index) => (
 					<OrderItem 
 						indexValue={index}

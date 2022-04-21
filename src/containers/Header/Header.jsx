@@ -46,10 +46,14 @@ const Header = () => {
 						</li>
 					</ul>
 				</div>
-				{/* Aqui se hace la validación de si la llamada del botón es true or false */}
-				{state.menuIsOpen && <Menu />}
-				{state.orderIsOpen && <MyOrder />}
 			</nav>
+			<div className="Header__menu--orders">
+					{/* Aqui se hace la validación de si la llamada del botón es true or false */}
+					<div className="Header-menu">
+						{state.menuIsOpen && <Menu/> }
+					</div>
+					{state.orderIsOpen && <MyOrder />}
+			</div>
 		</header>
 
 	);

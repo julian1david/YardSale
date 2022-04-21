@@ -4,7 +4,7 @@ import { useState } from 'react'
 const initialState = {
     cart: [],
     orderIsOpen: false,
-    smenuIsOpen: false,
+    menuIsOpen: false,
 }
 
 const useInitialState = () => {
@@ -14,8 +14,10 @@ const useInitialState = () => {
         setState({
             //con esta estructura manten la información
             ...state,
-            //con esto mantienete lo que tiene y agrega lo que voy a pasar
-            cart: [...state.cart, payload],
+            //con esto mantiene lo que tiene y agrega lo que voy a pasar
+            cart: state.cart.includes(payload)
+        ? state.cart
+        : [...state.cart, payload],
         })
     };
 

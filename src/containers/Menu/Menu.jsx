@@ -2,9 +2,11 @@ import React from 'react'
 import './Menu.scss'
 import Link from '@components/Link/Link'
 
-const Menu = () => {
+const Menu = ( {
+  className
+}) => {
   return (
-    <div className="Menu">
+    <div className={['Menu', className].join(" ")}>
       <ul>
         <li>
           <Link href="/" className='Link__menu'>My orders</Link>

@@ -7,13 +7,11 @@
     border-radius: 6px;
     background-color: var(--white);
     padding: 20px;
-    //Con esto lo desanclamos
-    position: absolute;
-    //esto es lo que mide el header
-    top: 60px;
-    right: 60px;
+    margin-right: 60px;
 }
-
+.Menu-shared{
+    margin-right: 0px;
+}
 .Menu ul{
     list-style: none;
     padding: 0;
