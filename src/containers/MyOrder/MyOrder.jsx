@@ -10,7 +10,8 @@ import '@styles/Button.scss'
 
 const MyOrder = () => {
 
-	const { state } = useContext(AppContext)
+	//aqui recibimos el state global
+	const { state,toggleOrder } = useContext(AppContext)
 
 	const sumTotal = () => {
 		//el reduce nos ayuda a sumar cada uno de los valores
@@ -18,10 +19,11 @@ const MyOrder = () => {
 		const sum = state.cart.reduce(reducer, 0);
 		return sum
 	}
+
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
-				<img src={arrow} alt="arrow"/>
+				<img src={arrow} alt="arrow" onClick={()=> toggleOrder()}  />
 				<Title>My Order</Title>
 			</div>
 			<div className="my-order-content">
@@ -32,13 +34,15 @@ const MyOrder = () => {
 						key={index}
 						product={product}/>
 				))}
+			</div>
+			<div className="order-total">
 				<div className="order">
 					<p>
 						<span>Total</span>
 					</p>
 					<p>${sumTotal()}</p>
 				</div>
-				<button className="Button" type="submit">Checkout</button>
+					<button className="Button button-order" type="submit">Checkout</button>
 			</div>
 		</aside>
 	)

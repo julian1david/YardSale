@@ -1,8 +1,10 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
 //aqui vamos agregar el estado para agregar al carito
-const initialState = {   
+const initialState = {
     cart: [],
+    orderIsOpen: false,
+    smenuIsOpen: false,
 }
 
 const useInitialState = () => {
@@ -20,14 +22,32 @@ const useInitialState = () => {
     const removeFromCart = (indexValue) => {
         setState({
             ...state,
-            cart: state.cart.filter((product,index) => index !== indexValue),
+            cart: state.cart.filter((product, index) => index !== indexValue),
         })
     }
+    //se agrega el estado de order para el menu.
+
+    const toggleOrder = () => {
+        setState({
+            ...state,
+            orderIsOpen: !state.orderIsOpen,
+        });
+    };
+
+    const toggleMenu = () => {
+        setState({
+            ...state,
+            menuIsOpen: !state.menuIsOpen,
+        });
+    };
+
 
     return {
         state,
         addToCart,
-        removeFromCart
+        removeFromCart,
+        toggleOrder,
+        toggleMenu
     }
 }
 

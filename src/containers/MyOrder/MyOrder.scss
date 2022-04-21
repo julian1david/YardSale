@@ -2,20 +2,22 @@
 
 .MyOrder {
 	width: 360px;
-	height: 90vh;
+	position: absolute;
 	padding: 24px;
 	box-sizing: border-box;
-	position: absolute;
 	right: 0;
 	background-color: var(--white);
 	top: 60px;
-	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
-	overflow: auto;
+	max-height: 90vh;
+	animation: swipeLeft .40s;
+	display: flex;
+	flex-direction: column;
 }
-.MyOrder::-webkit-scrollbar{
-	display: none;
+
+@keyframes swipeLeft {
+	100% {transform: translateX(-260px);}
 }
 .title-container {
 	display: flex;
@@ -25,13 +27,21 @@
 	margin-right: 14px;
 	cursor: pointer;
 }
+.my-order-content{
+	max-height: 80%;
+	overflow: auto;
+}
+.my-order-content::-webkit-scrollbar{
+	display: none;
+}
 .order {
 	display: grid;
 	grid-template-columns: auto 1fr;
 	gap: 16px;
 	align-items: center;
 	background-color: var(--text-input-field);
-	margin-bottom: 24px;
+	margin-top: 12px;
+	margin-bottom: 12px;
 	border-radius: 8px;
 	padding: 0 24px;
 }
@@ -46,6 +56,9 @@
 .order p:nth-child(2) {
 	text-align: end;
 	font-weight: bold;
+}
+.order-total .button-order{
+	margin-bottom: 0;
 }
 @media (max-width: 640px) {
 	.MyOrder {

@@ -1,12 +1,14 @@
 @use '@styles/vars';
 
 nav {
-	top: 0;
-	position: sticky;
 	display: flex;
 	justify-content: space-between;
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
+	background-color: var(--white);
+	width: calc(100% - 48px);
+	position: fixed;
+	top: 0;
 }
 .Header__nav--left {
 	display: flex;
@@ -64,7 +66,6 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
-
 @media (max-width: 800px) {
 	.Header__nav--left ul{
 		display: none;

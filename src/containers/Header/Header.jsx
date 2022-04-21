@@ -13,15 +13,8 @@ import arrow from '@icons/flechita.svg'
 const Header = () => {
 
 	//Hooks
-	const [toggle, setToggle] = useState(false);
-	const [toggleOrders, setToggleOrders] = useState(false)
 	//usamos el context para conectar el estado 
-	const {state:{cart}} = useContext(AppContext)
-
-	const handleToggle = () =>{
-		//con esto cada que se da clic se va a a cambiar el estado se´gun este
-		setToggle(!toggle);
-	}
+	const { state, toggleOrder, toggleMenu } = useContext(AppContext);
 
 	return (
 		<header>
@@ -43,19 +36,19 @@ const Header = () => {
 						<li className="Header_nav--right-email">
 						youremail@example.com
 						</li>
-						<li className="Header_nav--right-arrow" onClick={handleToggle}>
+						<li className="Header_nav--right-arrow" onClick={()=>toggleMenu()}>
 							<img src={arrow} alt="arrow"/>
 						</li>
 						<li className="Header_nav--right-shoppingCar" 
-						onClick={ () => setToggleOrders(!toggleOrders)}>
+						onClick={() => toggleOrder()}>
 							<img src={shoppingCart} alt="shopping cart" />
-							{cart.length > 0 ? <div>{cart.length > 9 ? `+9` : cart.length} </div> : null}
+							{state.cart.length > 0 ? <div>{state.cart.length > 9 ? `+9` : state.cart.length} </div> : null}
 						</li>
 					</ul>
 				</div>
 				{/* Aqui se hace la validación de si la llamada del botón es true or false */}
-				{toggle && <Menu />}
-				{toggleOrders && <MyOrder/>}
+				{state.menuIsOpen && <Menu />}
+				{state.orderIsOpen && <MyOrder />}
 			</nav>
 		</header>
 
