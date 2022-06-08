@@ -8,8 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         /* filename: 'bulde.js',
         publicPath: '/' */
-        filename: "YardSale/bundle.js",
-        publicPath: "/",
+        filename: '[name].[contenthash].js',
     },
     resolve: {
         extensions: ['.js', '.jsx'],
@@ -25,32 +24,32 @@ module.exports = {
         }
     },
     mode: 'development',
+    devtool: "source-map",
     module: {
         rules: [
             {
                 test: /\.(js|jsx)?$/,
                 exclude: /node_modules/,
-                use: [
+                use: 
                     {
                         loader: 'babel-loader'
                     }
-                ]
+                
             },
             {
                 test: /\.html$/,
-                use: [
+                use: 
                     {
                         loader: 'html-loader'
                     }
-                ]
+                
             },
             {
-                test: /\.(css|scss)$/,
-                use: [
-                    "style-loader",
-                    "css-loader",
-                    "sass-loader",
-                ]
+                test: /\.s?css$/i,
+                use: [MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
+                ],
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
@@ -60,6 +59,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            inject: 'body',
             template: './public/index.html',
             filename: './index.html'
         }),
@@ -68,7 +68,11 @@ module.exports = {
         })
     ],
     devServer: {
-        historyApiFallback: true,
+        static: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 3006,
+        watchFiles: path.join(__dirname, "./**"), //para recargar el navegador automáticamente
+        open: true //abrir el navegador al correr el script
     }
 
 }
