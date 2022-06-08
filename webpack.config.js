@@ -70,9 +70,9 @@ module.exports = {
     devServer: {
         static: path.join(__dirname, 'dist'),
         compress: true,
+        historyApiFallback: true,
         port: 3006,
         watchFiles: path.join(__dirname, "./**"), //para recargar el navegador automáticamente
         open: true //abrir el navegador al correr el script
     }
-
 }
