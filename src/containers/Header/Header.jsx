@@ -10,6 +10,8 @@ import logo from '@logos/logo_yard_sale.svg'
 import shoppingCart from '@icons/icon_shopping_cart.svg'
 import arrow from '@icons/flechita.svg'
 
+import { Link } from 'react-router-dom';
+
 const Header = () => {
 
 	//Hooks
@@ -23,13 +25,13 @@ const Header = () => {
 				<div className="Header__nav--left">
 					<Logo src={logo} alt="logo-desktop" className="Logo__nav" />
 					<ul>
-						<li><a href="/">All</a></li>
+						<li><Link to="/">All</Link></li>
 						<li><a>Clothes</a></li>
 						<li><a>Electronics</a></li>
 						<li><a>Furnitures</a></li>
 						<li><a>Toys</a></li>
 						<li><a>Others</a></li>
-						<a href="login">Login</a>
+						<li><Link to="login">Login</Link></li>
 						
 					</ul>
 				</div>
