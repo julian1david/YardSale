@@ -29,6 +29,8 @@ const Header = () => {
 						<li><a>Furnitures</a></li>
 						<li><a>Toys</a></li>
 						<li><a>Others</a></li>
+						<a href="login">Login</a>
+						
 					</ul>
 				</div>
 				<div className="Header__nav--right">
