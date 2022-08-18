@@ -1,11 +1,11 @@
-import React from 'react'
-import Container from '@components/DivContainer/DivContainer'
-import Section from '@components/Section/Section'
-import Title from '@components/Title/Title'
-import Label from '@components/Label/Label'
-import Input from '@components/Input/Input'
-import '@styles/Button.scss'
-import '@styles/Form.scss'
+
+import Container from '@/components/DivContainer'
+import Section from '@/components/Section'
+import Title from '@/components/Title'
+import Label from '@/components/Label'
+import Input from '@/components/Input'
+import '@/styles/Button.scss'
+import '@/styles/Form.scss'
 
 const CreateAccount = () => {
   return (
@@ -16,7 +16,7 @@ const CreateAccount = () => {
           <Label htmlFor="name">Name</Label>
           <Input type="text" name="name" id="name" placeholder="Your name" />
           <Label htmlFor="name">Email</Label>
-          <Input type="email" name="name" id="email" placeholder="email@example.com" />
+          <Input type="email" name="name" id="email" placeholder="email@/example.com" />
           <Label htmlFor="pass">Password</Label>
           <Input type="password" name="pass" id="pass" placeholder="**********" />
         </form>

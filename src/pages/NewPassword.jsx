@@ -1,12 +1,12 @@
-import React from 'react'
-import Input from '@components/Input/Input'
-import Label from '@components/Label/Label'
-import Title from '@components/Title/Title'
-import Subtitle from '@components/Subtitle/Subtitle'
-import Container from '@components/DivContainer/DivContainer'
-import Section from '@components/Section/Section'
-import '@styles/Button.scss'
-import '@styles/Form.scss'
+
+import Input from '@/components/Input'
+import Label from '@/components/Label'
+import Title from '@/components/Title'
+import Subtitle from '@/components/Subtitle'
+import Container from '@/components/DivContainer'
+import Section from '@/components/Section'
+import '@/styles/Button.scss'
+import '@/styles/Form.scss'
 
 function NewPassword() {
     return (

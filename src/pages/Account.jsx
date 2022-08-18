@@ -1,11 +1,11 @@
-import React from 'react'
-import Container from '@components/DivContainer/DivContainer'
-import Section from '@components/Section/Section'
-import Title from '@components/Title/Title'
-import Label from '@components/Label/Label'
-import Span from '@components/Span/Span'
-import '@styles/Button.scss'
-import '@styles/Form.scss'
+
+import Container from '@/components/DivContainer'
+import Section from '@/components/Section'
+import Title from '@/components/Title'
+import Label from '@/components/Label'
+import Span from '@/components/Span'
+import '@/styles/Button.scss'
+import '@/styles/Form.scss'
 
 const MyAccout = () => {
     return (
@@ -16,7 +16,7 @@ const MyAccout = () => {
                     <Label htmlFor="name">Name</Label>
                     <Span>Your Name is here</Span>
                     <Label htmlFor="name">Email</Label>
-                    <Span>youremail@example.com</Span>
+                    <Span>youremail@/example.com</Span>
                     <Label htmlFor="pass">Password</Label>
                     <Span>***************</Span>
                 </form>

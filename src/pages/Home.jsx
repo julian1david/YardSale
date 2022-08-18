@@ -1,12 +1,11 @@
-import React from 'react'
-import ProductList from '@containers/ProductList/ProductList'
+import ProductList from '@/containers/ProductList';
 
 const Home = () => {
-  return (
-    <>
+	return (
+		<>
 			<ProductList />
 		</>
-  )
-}
+	);
+};
 
-export default Home
+export default Home;

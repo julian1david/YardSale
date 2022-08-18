@@ -1,37 +1,50 @@
-# Yard Sales :convenience_store:
-Es una SPA del curso practico  de React de Platzi, En el presentamos una mini tienda, donde sus componenetes estan distrubidos con las distintas vistas que podemos encontrar el React Router
+# Shop-Store
 
-Utiliza una API llamada FakeStore, que está disponible en Internet y la inspiración del diseño proviene del curso de desarrollador de frontend y el curso práctico de React en Platzi.
+An example of shop-store-platzi course professional 
 
+## Vista del proyecto 🚀
 
-## Resources and Links :fountain:
+Mira **[react-shopStore]()** para conocer como funciona el proyecto.
 
-[Inspiración del Layout](https://github.com/platzi/curso-frontend-developer-practico)
+### Instalación 🔧
 
-[Figma Mobile Design](https://www.figma.com/proto/bcEVujIzJj5PNIWwF9pP2w/Platzi_YardSale?node-id=0%3A719&amp%3Bscaling=scale-down&amp%3Bpage-id=0%3A1&amp%3Bstarting-point-node-id=0%3A719)
-
-[Figma Desktop Design](https://www.figma.com/proto/bcEVujIzJj5PNIWwF9pP2w/Platzi_YardSale?node-id=5%3A2808[%E2%80%A6]ing=scale-down&amp;page-id=0%3A998&amp;starting-point-node-id=5%3A2808)
-
-[FakeStore API](https://fakestoreapi.com/)
-
-
-## Installation :electric_plug:
-Clone yardsales:
 ```
-git clone https://github.com/julian1david/YardSale
- ```
-
-Install dependencies:
-```
-npm install
+git clone 
 ```
 
-Local yardsale deploy:
 ```
-npm run start
+    npm install
+    yarn install
 ```
 
-## License :unlock:
+```
+    npm run dev
+    yarn run dev
+```
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed
+## Construido con 🛠️
 
+- React
+- HTML
+- CSS
+- SASS
+- VITE
+- ReactHooks
+- Eslint
+- Prettier
+
+## Contribuyendo 🖇️
+
+Cualquier contirbución al proyecto es bien recibida !
+
+## Autor ✒️
+
+- **Julian F** - [julian1f](https://github.com/julianf-dev)
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia (MIT) - mira el archivo [LICENSE](LICENSE) para detalles
+
+---
+
+Hecho con ❤️ por [julian1f](https://github.com/julianf-dev) 😊

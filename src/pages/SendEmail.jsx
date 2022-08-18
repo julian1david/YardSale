@@ -1,13 +1,13 @@
-import React from 'react'
-import Link from '@components/Link/Link'
-import Title from '@components/Title/Title'
-import Subtitle from '@components/Subtitle/Subtitle'
-import Span from '@components/Span/Span'
-import Container from '@components/DivContainer/DivContainer'
-import Section from '@components/Section/Section'
-import Figure from '@components/Figure/Figure'
-import email from '@icons/email.svg'
-import '@styles/Button.scss'
+
+import Link from '@/components/Link'
+import Title from '@/components/Title'
+import Subtitle from '@/components/Subtitle'
+import Span from '@/components/Span'
+import Container from '@/components/DivContainer'
+import Section from '@/components/Section'
+import Figure from '@/components/Figure'
+import email from '@/assets/icons/email.svg'
+import '@/styles/Button.scss'
 
 
 const SendEmail = () => {
@@ -20,7 +20,7 @@ const SendEmail = () => {
                     <img src={email} alt="email" />
                 </Figure>
                 <button className="Button" type="submit">Log in</button>
-                <p><Span className="Span--email">Didn't receive the email?</Span><Link>Resend</Link></p>
+                <p><Span className="Span--email">Didn&apos;t receive the email?</Span><Link>Resend</Link></p>
             </Container>
         </Section>
     )
