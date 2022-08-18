@@ -4,12 +4,12 @@ An example of shop-store-platzi course professional
 
 ## Vista del proyecto 🚀
 
-Mira **[react-shopStore]()** para conocer como funciona el proyecto.
+Mira **[react-shopStore](https://julian1david-yardsale.netlify.app/)** para conocer como funciona el proyecto.
 
 ### Instalación 🔧
 
 ```
-git clone 
+git clone  https://github.com/julianf-dev/YardSale
 ```
 
 ```
