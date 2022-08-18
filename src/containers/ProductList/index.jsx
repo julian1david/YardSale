@@ -7,10 +7,8 @@ const API = 'https://api.escuelajs.co/api/v1/products'
 
 const ProductList = () => {
 
-	// instanciamos nuestro hook
+	// useHook
 	const products = useGetProducts(API);
-
-	console.log(products);
 	
 	return (
 		<section>

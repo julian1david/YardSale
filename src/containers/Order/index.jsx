@@ -1,7 +1,7 @@
 
 import Span from '@/components/Span';
 import './Order.scss';
-import arrow from '@/icons/flechita.svg'
+import arrow from '@/assets/icons/flechita.svg'
 
 
 const Order = ( {className} ) => {

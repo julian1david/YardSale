@@ -1,8 +1,8 @@
 import { useContext }from 'react'
 import AppContext from '@/context/AppContext.js'
 import Figure from '@/components/Figure'
-import addToCartImage from '@/icons/bt_add_to_cart.svg'
-import addedToCartImage from '@/icons/bt_added_to_cart.svg'
+import addToCartImage from '@/assets/icons/bt_add_to_cart.svg'
+import addedToCartImage from '@/assets/icons/bt_added_to_cart.svg'
 import './ProductItem.scss'
 
 // pasamos el product que es el itema  recibir
