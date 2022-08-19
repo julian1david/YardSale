@@ -14,9 +14,10 @@ const ProductItem = ({product}) => {
 
   // con esto se va a dar el manejo del clic de un solo clic
   const handleCart = (item) => {
+    console.log('in cart: ', state.cart.includes(item));
     addToCart(item)
-    console.log(item)
   }
+
   return (
     <div className="ProductItem">
       <Figure className="Figure--ProductItem">

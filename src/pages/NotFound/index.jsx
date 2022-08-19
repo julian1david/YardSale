@@ -4,7 +4,7 @@ import Title from '@/components/Title'
 import Subtitle from '@/components/Subtitle'
 import Figure from '@/components/Figure'
 import Span from '@/components/Span'
-import Link from '@/components/Link'
+import Alink from '@/components/Alink'
 import './Notfound.scss'
 import '@/styles/Button.scss'
 
@@ -20,7 +20,7 @@ const NotFound = () => {
                 </Figure>
                 <button type="button" className=" Button Button--notFound">Page not NotFound</button>
                 <Subtitle className="Subtitle--notFound">The link that you followed is probably broken, or the page was deleted or no longer exists</Subtitle>
-                <p><Span className="Span--email">Return to the</Span><Link>Home page</Link></p>
+                <p><Span className="Span--email">Return to the</Span><Alink>Home page</Alink></p>
             </div>
         </Container>
     )

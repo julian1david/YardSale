@@ -1,5 +1,5 @@
 
-import Link from '@/components/Link'
+import Alink from '@/components/Alink'
 import './MenuMobile.scss'
 
 const MenuMobile = () => {
@@ -9,40 +9,40 @@ const MenuMobile = () => {
                 <h4>CATEGORIES</h4>
                 <ul>
                     <li>
-                        <Link className="Link__menu">All</Link>
+                        <Alink className="Link__menu">All</Alink>
                     </li>
                     <li>
-                        <Link className="Link__menu">Clothes</Link>
+                        <Alink className="Link__menu">Clothes</Alink>
                     </li>
                     <li>
-                        <Link className="Link__menu">Electronics</Link>
+                        <Alink className="Link__menu">Electronics</Alink>
                     </li>
                     <li>
-                        <Link className="Link__menu">Fornitures</Link>
+                        <Alink className="Link__menu">Fornitures</Alink>
                     </li>
                     <li>
-                        <Link className="Link__menu">Toys</Link>
+                        <Alink className="Link__menu">Toys</Alink>
                     </li>
                     <li>
-                        <Link className="Link__menu">Others</Link>
+                        <Alink className="Link__menu">Others</Alink>
                     </li>
                 </ul>
                 <ul>
                     <li>
-                        <Link className="Link__menu">My orders</Link>
+                        <Alink className="Link__menu">My orders</Alink>
                     </li>
                     <li>
-                        <Link className="Link__menu">My account</Link>
+                        <Alink className="Link__menu">My account</Alink>
                     </li>
                 </ul>
             </div>
             <div>
                 <ul>
                     <li>
-                        <Link className="Link__menu--email">yourmail@/example.com</Link>
+                        <Alink className="Link__menu--email">yourmail@/example.com</Alink>
                     </li>
                     <li>
-                        <Link>Sign out</Link>
+                        <Alink>Sign out</Alink>
                     </li>
                 </ul>
 

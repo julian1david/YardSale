@@ -40,7 +40,7 @@ const Header = () => {
 						<li className="Header_nav--right-email">
 						youremail@/example.com
 						</li>
-						<li className="Header_nav--right-arrow" onClick={()=>toggleMenu()}>
+						<li className="Header_nav--right-arrow" onClick={toggleMenu}>
 							<img src={arrow} alt="arrow"/>
 						</li>
 						<li className="Header_nav--right-shoppingCar" 

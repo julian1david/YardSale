@@ -1,25 +1,29 @@
+import './Menu.scss';
+import Alink from '@/components/Alink';
+import { Link } from 'react-router-dom';
 
-import './Menu.scss'
-import Link from '@/components/Link'
+const Menu = ({ className }) => {
+	return (
+		<div className={['Menu', className].join(' ')}>
+			<ul>
+				<li>
+					<Link to='/orders'>
+						<Alink className='Link__menu'>My orders</Alink>
+					</Link>
+				</li>
+				<li>
+					<Link to='/account'>
+						<Alink className='Link__menu'>My account</Alink>
+					</Link>
+				</li>
+				<li>
+					<Link to='/'>
+						<Alink>Sign out</Alink>
+					</Link>
+				</li>
+			</ul>
+		</div>
+	);
+};
 
-const Menu = ( {
-  className
-}) => {
-  return (
-    <div className={['Menu', className].join(" ")}>
-      <ul>
-        <li>
-          <Link href="/" className='Link__menu'>My orders</Link>
-        </li>
-        <li>
-          <Link href="/" className='Link__menu'>My account</Link>
-        </li>
-        <li>
-          <Link href="/">Sign out</Link>
-        </li>
-      </ul>
-    </div>
-  )
-}
-
-export default Menu
+export default Menu;

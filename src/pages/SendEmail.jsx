@@ -1,5 +1,5 @@
 
-import Link from '@/components/Link'
+import Alink from '@/components/Alink'
 import Title from '@/components/Title'
 import Subtitle from '@/components/Subtitle'
 import Span from '@/components/Span'
@@ -20,7 +20,7 @@ const SendEmail = () => {
                     <img src={email} alt="email" />
                 </Figure>
                 <button className="Button" type="submit">Log in</button>
-                <p><Span className="Span--email">Didn&apos;t receive the email?</Span><Link>Resend</Link></p>
+                <p><Span className="Span--email">Didn&apos;t receive the email?</Span><Alink>Resend</Alink></p>
             </Container>
         </Section>
     )

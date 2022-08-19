@@ -12,7 +12,7 @@ const Checkout = () => {
                 <div className="Checkout__container">
                     <Title>My Orders</Title>
                     <div className='Form'>
-                        <Order className="Checkout--Order" />
+                        <Order className="Checkout--Order"/>
                     </div>
                     <OrderItem />
                 </div>
