@@ -2,12 +2,13 @@
 
 .Menu{
     width: 100px;
-    height: auto;
+    height: 160px;
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
     background-color: var(--white);
     padding: 20px;
-    margin-right: 60px;
+    margin-right: calc(100% + 54px);;
+    
 }
 .Menu-shared{
     margin-right: 0px;
