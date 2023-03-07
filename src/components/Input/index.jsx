@@ -1,5 +1,4 @@
-;
-import './Input.scss'
+import './Input.scss';
 
 const Input = ({
 	type,
@@ -7,7 +6,7 @@ const Input = ({
 	name = undefined,
 	placeholder = undefined,
 	value = undefined,
-	onClick = undefined
+	onClick = undefined,
 }) => {
 	return (
 		<input
@@ -16,7 +15,7 @@ const Input = ({
 			name={name}
 			placeholder={placeholder}
 			value={value}
-			className="Input"
+			className='Input'
 		/>
 	);
 };

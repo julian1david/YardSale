@@ -29,12 +29,12 @@ const App = () => {
 						<Route path='/login' element={<Login />} />
 						<Route path='/signup' element={<CreateAccount />} />
 						<Route path='/password-recovery' element={<PasswordRecovery />} />
-						<Route path="/new-password" element={<NewPassword />} />
-                        <Route path="/send-email" element={<SendEmail />} />
-                        <Route path="/account" element={<Account />} />
-                        <Route path="/checkout" element={<Checkout />} />
-                        <Route path="/orders" element={<Orders />} />
-                        <Route path="*" element={<NotFound />} /> 
+						<Route path='/new-password' element={<NewPassword />} />
+						<Route path='/send-email' element={<SendEmail />} />
+						<Route path='/account' element={<Account />} />
+						<Route path='/checkout' element={<Checkout />} />
+						<Route path='/orders' element={<Orders />} />
+						<Route path='*' element={<NotFound />} />
 					</Routes>
 				</Layout>
 			</BrowserRouter>

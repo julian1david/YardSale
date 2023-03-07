@@ -1,33 +1,30 @@
-@import '@/styles/vars';;
+@import '@/styles/vars';
 
-.Menu{
-    width: 100px;
-    height: 160px;
-    border: 1px solid var(--very-light-pink);
-    border-radius: 6px;
-    background-color: var(--white);
-    padding: 20px;
-    margin-right: calc(100% + 54px);;
-    
+.Menu {
+	width: 100px;
+	height: 160px;
+	border: 1px solid var(--very-light-pink);
+	border-radius: 6px;
+	background-color: var(--white);
+	padding: 20px;
+	margin-right: calc(100% + 54px);
 }
-.Menu-shared{
-    margin-right: 0px;
+.Menu-shared {
+	margin-right: 0px;
 }
-.Menu ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.Menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
-.Menu ul li{
-    text-align: end;
-    margin-bottom: 28px;
+.Menu ul li {
+	text-align: end;
+	margin-bottom: 28px;
 }
 
 .Menu ul li:last-child {
-    padding-top: 20px;
-    margin-bottom: 0;
-    border-top: 1px solid var(--very-light-pink);
+	padding-top: 20px;
+	margin-bottom: 0;
+	border-top: 1px solid var(--very-light-pink);
 }
-
-

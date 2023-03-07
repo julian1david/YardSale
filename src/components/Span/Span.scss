@@ -1,19 +1,19 @@
-@import '@/styles/vars';;
+@import '@/styles/vars';
 
-.Span{
-    font-size: var(--md);
-    color: var(--very-light-pink);
-    margin: 8px 0 32px 0;
+.Span {
+	font-size: var(--md);
+	color: var(--very-light-pink);
+	margin: 8px 0 32px 0;
 }
-.Span--email{
-    font-size: var(--sm);
+.Span--email {
+	font-size: var(--sm);
 }
-.Span--order-one{
-    color: var(--black);
+.Span--order-one {
+	color: var(--black);
 	font-weight: bold;
-    margin: 0;
+	margin: 0;
 }
-.Span--order-two{
-    font-size: var(--sm);
-    margin: 0;
+.Span--order-two {
+	font-size: var(--sm);
+	margin: 0;
 }

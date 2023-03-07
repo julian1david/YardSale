@@ -5,7 +5,7 @@ import Subtitle from '@/components/Subtitle';
 import Alink from '@/components/Alink';
 import Label from '@/components/Label';
 import Input from '@/components/Input';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import '@/styles/Button.scss';
 import '@/styles/Form.scss';
 

@@ -1,6 +1,6 @@
 # Shop-Store
 
-An example of shop-store-platzi course professional 
+An example of shop-store-platzi course professional
 
 ## Vista del proyecto 🚀
 

@@ -1,13 +1,11 @@
+import './Label.scss';
 
-import './Label.scss'
+const Label = ({ children, htmlFor = undefined }) => {
+	return (
+		<label className='Label' htmlFor={htmlFor}>
+			{children}
+		</label>
+	);
+};
 
-const Label = ( {
-    children,
-    htmlFor=undefined
-}) => {
-  return (
-    <label className='Label' htmlFor={htmlFor}>{children}</label>
-  )
-}
-
-export default Label
+export default Label;

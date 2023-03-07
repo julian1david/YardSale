@@ -1,13 +1,7 @@
+import './Span.scss';
 
-import './Span.scss'
+const Span = ({ children, className }) => {
+	return <span className={['Span', className].join(' ')}> {children} </span>;
+};
 
-const Span = (
-    {children,
-    className}
-) => {
-  return (
-    <span className={["Span", className].join(" ")}> {children} </span>
-  )
-}
-
-export default Span
+export default Span;

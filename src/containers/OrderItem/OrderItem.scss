@@ -1,4 +1,4 @@
-@import '@/styles/vars';;
+@import '@/styles/vars';
 
 .OrderItem {
 	display: grid;
@@ -15,6 +15,6 @@
 	font-size: var(--md);
 	font-weight: bold;
 }
-.OrdenItem--close{
+.OrdenItem--close {
 	cursor: pointer;
 }

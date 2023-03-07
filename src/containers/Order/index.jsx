@@ -1,20 +1,18 @@
-
 import Span from '@/components/Span';
 import './Order.scss';
-import arrow from '@/assets/icons/flechita.svg'
+import arrow from '@/assets/icons/flechita.svg';
 
-
-const Order = ( {className} ) => {
+const Order = ({ className }) => {
 	return (
-		<div className={["Order", className].join(" ")}>
+		<div className={['Order', className].join(' ')}>
 			<p>
-				<Span className="Span--order-one">03.25.21</Span>
-				<Span className="Span--order-two">6 articles</Span>
+				<Span className='Span--order-one'>03.25.21</Span>
+				<Span className='Span--order-two'>6 articles</Span>
 			</p>
 			<p>$560.00</p>
-			<img src={arrow} alt="arrow"/>
+			<img src={arrow} alt='arrow' />
 		</div>
-	)
-}
+	);
+};
 
-export default Order
+export default Order;

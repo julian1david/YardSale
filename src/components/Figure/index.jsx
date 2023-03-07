@@ -1,12 +1,7 @@
-
-import './Figure.scss'
+import './Figure.scss';
 
 const Figure = ({ children, className }) => {
-    return (
-        <figure className={className}>
-            {children}
-        </figure>
-    )
-}
+	return <figure className={className}>{children}</figure>;
+};
 
-export default Figure
+export default Figure;

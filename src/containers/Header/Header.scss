@@ -16,34 +16,34 @@ nav {
 
 .Header__nav--left ul,
 .Header__nav--right ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 12px;
-    display: flex;
-    align-items: center;
-    height: 60px;
+	list-style: none;
+	padding: 0;
+	margin: 0 12px;
+	display: flex;
+	align-items: center;
+	height: 60px;
 }
 .Header__nav--left ul li a {
-    text-decoration: none;
+	text-decoration: none;
 	color: var(--very-light-pink);
 	border: 1px solid var(--white);
 	padding: 8px;
 	border-radius: 8px;
 }
-.Header__nav--left a:hover{
-    border: 1px solid var(--hospital-green);
+.Header__nav--left a:hover {
+	border: 1px solid var(--hospital-green);
 	color: var(--hospital-green);
 	cursor: pointer;
 }
-.Header_nav--right-arrow{
-    margin-left: 10px;
-    margin-right: 10px;
-    transform: rotate(90deg);
-    cursor: pointer;
+.Header_nav--right-arrow {
+	margin-left: 10px;
+	margin-right: 10px;
+	transform: rotate(90deg);
+	cursor: pointer;
 }
 
-.Header_nav--right-email{
-    color: var(--very-light-pink);
+.Header_nav--right-email {
+	color: var(--very-light-pink);
 	font-size: var(--sm);
 }
 
@@ -66,17 +66,17 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
-.Header__menu--orders{
+.Header__menu--orders {
 	display: flex;
 	position: absolute;
 	top: 60px;
 	right: 0;
 }
-.Header-menu{
-    margin-right: 10px;
+.Header-menu {
+	margin-right: 10px;
 }
 @media (max-width: 800px) {
-	.Header__nav--left ul{
+	.Header__nav--left ul {
 		display: none;
 	}
 	.Header_nav--right-email,

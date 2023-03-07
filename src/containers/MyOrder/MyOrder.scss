@@ -1,4 +1,4 @@
-@import '@/styles/vars';;
+@import '@/styles/vars';
 
 .MyOrder {
 	width: 360px;
@@ -10,13 +10,15 @@
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
 	max-height: 90vh;
-	animation: swipeLeft .40s;
+	animation: swipeLeft 0.4s;
 	display: flex;
 	flex-direction: column;
 }
 
 @keyframes swipeLeft {
-	100% {transform: translateX(-260px);}
+	100% {
+		transform: translateX(-260px);
+	}
 }
 .title-container {
 	display: flex;
@@ -26,11 +28,11 @@
 	margin-right: 14px;
 	cursor: pointer;
 }
-.my-order-content{
+.my-order-content {
 	max-height: 80%;
 	overflow: auto;
 }
-.my-order-content::-webkit-scrollbar{
+.my-order-content::-webkit-scrollbar {
 	display: none;
 }
 .order {
@@ -56,7 +58,7 @@
 	text-align: end;
 	font-weight: bold;
 }
-.order-total .button-order{
+.order-total .button-order {
 	margin-bottom: 0;
 }
 @media (max-width: 640px) {

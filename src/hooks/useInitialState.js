@@ -16,7 +16,8 @@ const useInitialState = () => {
 			...state,
 			//  con esto mantiene lo que tiene y agrega lo que voy a pasar
 			cart: state.cart.includes(payload)
-				? state.cart: [...state.cart, payload],
+				? state.cart
+				: [...state.cart, payload],
 		});
 	};
 

@@ -4,8 +4,6 @@ import close from '@/assets/icons/icon_close.png';
 import './OrderItem.scss';
 
 const OrderItem = ({ product, indexValue }) => {
-
-
 	const { removeFromCart } = useContext(AppContext);
 
 	const handleRemove = index => {
@@ -29,7 +27,7 @@ const OrderItem = ({ product, indexValue }) => {
 					/>
 				</>
 			)}
-      <p>Any exist items in orders</p>
+			<p>Any exist items in orders</p>
 		</div>
 	);
 };

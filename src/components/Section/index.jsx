@@ -1,13 +1,9 @@
+import './Section.scss';
 
-import './Section.scss'
+const Section = ({ children, className }) => {
+	return (
+		<section className={['Section', className].join(' ')}>{children}</section>
+	);
+};
 
-const Section = (
-  {children,
-  className}
-  ) => {
-  return (
-    <section className={["Section", className].join(" ")}>{children}</section>
-  )
-}
-
-export default Section
+export default Section;

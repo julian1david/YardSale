@@ -1,4 +1,4 @@
-@import '@/styles/vars';;
+@import '@/styles/vars';
 
 .Order {
 	display: grid;
@@ -15,10 +15,10 @@
 	text-align: end;
 	font-weight: bold;
 }
-.Order img{
+.Order img {
 	cursor: pointer;
 }
-.Checkout--Order{
+.Checkout--Order {
 	margin-bottom: 24px;
 	background-color: var(--text-input-field);
 	border-radius: 8px;

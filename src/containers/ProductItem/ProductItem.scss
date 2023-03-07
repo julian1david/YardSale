@@ -1,4 +1,4 @@
-@import '@/styles/vars';;
+@import '@/styles/vars';
 
 .ProductItem {
 	width: 240px;
@@ -9,13 +9,13 @@
 	align-items: center;
 	margin-top: 12px;
 }
-.ProductItem--info  div p:nth-child(1) {
+.ProductItem--info div p:nth-child(1) {
 	font-weight: bold;
 	font-size: var(--md);
 	margin-top: 0;
 	margin-bottom: 4px;
 }
-.ProductItem--info  div p:nth-child(2) {
+.ProductItem--info div p:nth-child(2) {
 	font-size: var(--sm);
 	margin-top: 0;
 	margin-bottom: 0;
@@ -25,7 +25,7 @@
 .disabled {
 	cursor: not-allowed;
 }
-.pointer{
+.pointer {
 	cursor: pointer;
 }
 @media (max-width: 640px) {
